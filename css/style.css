@@ -1,7 +1,148 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&family=Sofia&display=swap');
 
 :root{
+    /* ====== Color ====== */
+    --background-color:#333333;
+    --h1-color: #f0b034;
+    --h2-color: #ffffff;
+    --button-color-light: #9a211e;
+    --button-color-dark: #851d20;
 
+    /* ====== Font ====== */
+    --font-sofia: 'Sofia', cursive;
+    --font-roboto: 'Roboto Slab', serif;
+    --h1-size: 11rem;
+    --h2-size: 6rem;
+    --p-size: 1.25rem;
+    --date-size: 2.5rem;
+    --nav-size: 1.4rem;
 }
 
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    background-color: var(--background-color);
+    background-image: url('/images/bg-1.png');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: center;
+}
+
+.container{
+    margin: auto;
+    padding: 0;
+    display: block;
+}
+
+.nav{
+    position:absolute;
+    margin-left: 38%;
+}
+
+.nav-list li{
+    display: inline-block;
+    margin: 3rem 4rem;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.bg .container{
+    padding: 0 0 0 30%;
+    margin-left: 8rem;
+}
+
+
+/* ============ Font========== */
+li a{
+    text-decoration: none;
+    font-size: var(--nav-size);
+}
+
+.title-1{
+    font-family: var(--font-sofia);
+    font-size: var(--h1-size);
+    color: var(--h1-color);
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.title-2{
+    font-family: var(--font-roboto);
+    font-size: var(--h2-size);
+    color: var(--h2-color);
+    font-weight: 400;
+    margin-top: -10%;
+    letter-spacing: 1rem;
+}
+
+.text{
+    font-family: var(--font-roboto);
+    font-size: var(--p-size);
+    color: var(--h2-color);
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    margin: 2rem 25%;
+}
+
+.date{
+    font-family: var(--font-roboto);
+    font-size: var(--date-size);
+    font-weight: 400;
+    color: var(--h1-color);
+    letter-spacing: 0.5rem;
+}
+
+#th{
+    font-size: 1.5rem;
+}
+
+button{
+    background-color: var(--button-color-light);
+    padding: 0.7rem 2.5rem 0.7rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all ease 0.3s;
+}
+
+button:hover{
+    background-color: var(--button-color-dark);
+}
+
+.button{
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+.container a,button{
+    font-family: var(--font-roboto);
+    color: var(--h2-color);
+    transition: all ease 0.3s;
+}
+
+.button button:hover{
+    color: var(--h1-color);
+}
+
+/* ============change the color of nav list============ */
+.nav-list a:hover{
+    color: var(--h1-color);
+}
+
+.word{
+    display: flex;
+    justify-content: center;
+}
