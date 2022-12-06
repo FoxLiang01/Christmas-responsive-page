@@ -57,6 +57,13 @@ li a{
     text-decoration: none;
 }
 
+.bx-menu{
+    display: none;
+    color: var(--h2-color);
+    font-size: var(--date-size);
+    visibility: hidden;
+}
+
 .bg .container{
     padding: 0 0 0 30%;
     margin-left: 8rem;
@@ -145,4 +152,33 @@ button:hover{
 .word{
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 1310px){
+    .nav-list li{
+        display: none;
+    }
+
+    .nav{
+        margin-left: 95%;
+        margin-top: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    .bx-menu{
+        visibility: visible;
+        cursor: pointer;
+        margin: 1rem;
+        position: absolute;
+        right: 0;
+    }
+}
+    
+@media (max-width: 500px){
+    .bg{
+        background-image: url('/images/bg-3.png');
+        background-size: cover;
+        min-width: 100%;
+    }
 }
