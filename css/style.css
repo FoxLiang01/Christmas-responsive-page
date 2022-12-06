@@ -28,7 +28,7 @@
 
 .bg{
     background-color: var(--background-color);
-    background-image: url("./images/bg-1.png");
+    background-image: url("/images/bg01.png");
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
